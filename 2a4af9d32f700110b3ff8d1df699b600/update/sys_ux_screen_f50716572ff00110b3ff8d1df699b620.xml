@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="UIB Tabbed Tasks Admin">b468869b2fb00110b3ff8d1df699b6ec</app_config>
+        <description/>
+        <event_mappings/>
+        <macroponent display_value="Record">558adc930f0210107d20409dc4767e84</macroponent>
+        <macroponent_config>{
+  "views" : "",
+  "selectedTabIndex" : 0,
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>Record details default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <screen_condition/>
+        <screen_type display_value="Record details">2107de172ff00110b3ff8d1df699b61a</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 15:50:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f50716572ff00110b3ff8d1df699b620</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Record details default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SP_UIB_Huddle" source="2a4af9d32f700110b3ff8d1df699b600">2a4af9d32f700110b3ff8d1df699b600</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SP_UIB_Huddle">2a4af9d32f700110b3ff8d1df699b600</sys_scope>
+        <sys_update_name>sys_ux_screen_f50716572ff00110b3ff8d1df699b620</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 15:51:05</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=f50716572ff00110b3ff8d1df699b620"/>
+</record_update>

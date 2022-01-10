@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($location, $scope, $timeout, spUtil) {
+	/* widget controller */
+	var c = this;
+
+	$scope.$watch(function(){
+		return $location.search();
+	}, function(value){
+		console.log(value);
+		spUtil.addInfoMessage(JSON.stringify(value))
+	})
+
+	$scope.selectTab=function(selectedTab){
+
+		$location.search( _.merge({'id': 'sp_tabbed_tasks', 'spa': 1}, 
+															c.data.tabConfig[selectedTab]) );
+
+	}
+
+
+
+
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.nav-tabs &gt; li.active &gt; a {
+  border-bottom: 2px solid red;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>sp_tabbed_tasks</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>SP Tabbed Tasks</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	var showMine = options.showMine || false;
+	var query = 'active=true^active=true^EQ';
+
+	data.tabConfig={
+		'inc':{
+			'table': 'incident',
+			'filter': query,
+			'view': ''
+		},
+		'prb':{
+			'table': 'problem',
+			'filter': query,
+			'view': ''
+		},
+		'chg':{
+			'table': 'change_request',
+			'filter': query,
+			'view': ''
+		}
+	}
+
+	data.incList = $sp.getWidget('data-table-from-url', data.tabConfig.inc);
+	data.prbList = $sp.getWidget('data-table-from-url', data.tabConfig.prb);
+	data.chgList = $sp.getWidget('data-table-from-url', data.tabConfig.chg);
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 14:40:17</sys_created_on>
+        <sys_id>a007425b2fb00110b3ff8d1df699b6f3</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name>SP Tabbed Tasks</sys_name>
+        <sys_package display_value="SP_UIB_Huddle" source="2a4af9d32f700110b3ff8d1df699b600">2a4af9d32f700110b3ff8d1df699b600</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SP_UIB_Huddle">2a4af9d32f700110b3ff8d1df699b600</sys_scope>
+        <sys_update_name>sp_widget_a007425b2fb00110b3ff8d1df699b6f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-10 11:05:37</sys_updated_on>
+        <template><![CDATA[<div>
+
+  <uib-tabset>
+    <!--Incident-->
+    <uib-tab index="0" 
+             heading="Incident"
+             select="selectTab('inc')">      
+      <sp-widget widget="c.data.incList"></sp-widget>
+    </uib-tab>
+
+    <!--Problem-->
+    <uib-tab index="1" 
+             heading="Problem"
+             select="selectTab('prb')">
+      <sp-widget widget="c.data.prbList"></sp-widget>
+    </uib-tab>
+
+    <!--Change-->
+    <uib-tab index="2" 
+             heading="Change"
+             select="selectTab('chg')">
+      <sp-widget widget="c.data.chgList"></sp-widget>
+    </uib-tab>
+  </uib-tabset>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>
