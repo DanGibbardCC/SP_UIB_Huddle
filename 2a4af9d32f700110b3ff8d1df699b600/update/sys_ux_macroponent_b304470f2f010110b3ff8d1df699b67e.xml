@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_2",
+  "elementLabel" : "Container 2",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_2",
+      "elementLabel" : "Data visualization 2",
+      "propertyValues" : {
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Active Incidents",
+            "comment" : ""
+          }
+        },
+        "chartType" : {
+          "type" : "JSON_LITERAL",
+          "value" : "single_score"
+        },
+        "dataConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "[{\"__viz_config_id\":\"dGFibGVpbmNpZGVudDE2NDI1ODkxOTY4NzM=\",\"__viz_config_label\":\"Incident\",\"aggregate_function\":\"COUNT\",\"display_zero\":true,\"source_type\":\"source\",\"source_id\":\"d94d6f62d7632100b96d45a3ce6103d2\"}]"
+        },
+        "styleConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"seriesConfig\":{\"data_0_0\":{\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}"
+        },
+        "isRealtime" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "showRealtimeIndicator" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "auto"
+        },
+        "border" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "refreshInterval" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "kpiDetailsNavigation" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "followFilters" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideFiltersInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "filterConfigurations" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "parFilters" ]
+          }
+        },
+        "hideHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "refreshFrequency" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 1",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "data_visualization_3",
+      "elementLabel" : "Data visualization 3",
+      "propertyValues" : {
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Active Critical",
+            "comment" : ""
+          }
+        },
+        "chartType" : {
+          "type" : "JSON_LITERAL",
+          "value" : "single_score"
+        },
+        "dataConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "[{\"__viz_config_id\":\"dGFibGVpbmNpZGVudDE2NDI1ODkyMzY5MTE=\",\"__viz_config_label\":\"Incident\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"priority=1\",\"display_zero\":true,\"source_type\":\"source\",\"source_id\":\"d94d6f62d7632100b96d45a3ce6103d2\"}]"
+        },
+        "styleConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"seriesConfig\":{\"data_0_0\":{\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}"
+        },
+        "isRealtime" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "showRealtimeIndicator" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "auto"
+        },
+        "border" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "refreshInterval" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "kpiDetailsNavigation" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "followFilters" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideFiltersInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "filterConfigurations" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "parFilters" ]
+          }
+        },
+        "hideHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "refreshFrequency" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 2",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Column 1","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"flex":"1","margin-right":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 3","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "4105f10153071010e6bcddeeff7b121e",
+        "type" : "flex"
+      },
+      "version" : "2.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "container_1",
+  "elementLabel" : "Container 1",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_1",
+      "elementLabel" : "Data visualization 1",
+      "propertyValues" : {
+        "label" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "chartType" : {
+          "type" : "JSON_LITERAL",
+          "value" : "line"
+        },
+        "dataConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "[{\"__viz_config_id\":\"dGFibGVpbmNpZGVudDE2NDI1ODkxMTgwNTg=\",\"__viz_config_label\":\"Incident\",\"aggregate_function\":\"COUNT\",\"trend_field\":\"closed_at\",\"trend_interval\":\"date\",\"number_of_groups\":10,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"incident\"}]"
+        },
+        "styleConfigurations" : {
+          "type" : "JSON_LITERAL",
+          "value" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{\"orientation\":\"left\"},\"seriesConfig\":{\"data_0_0\":{\"axis\":\"primary\",\"enableAbbreviation\":false}},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\",\"type\":\"peakValley\"},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true,\"showPercentages\":false},\"registerPosition\":\"bottom\"}"
+        },
+        "isRealtime" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "showRealtimeIndicator" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "auto"
+        },
+        "border" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "refreshInterval" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "kpiDetailsNavigation" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "followFilters" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideFiltersInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "filterConfigurations" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "parFilters" ]
+          }
+        },
+        "hideHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "refreshFrequency" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ ]</data>
+        <dispatched_events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"400px","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "flex"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Landing</name>
+        <props>[ ]</props>
+        <required_translations>[ {
+  "message" : "Active Critical",
+  "comment" : ""
+}, {
+  "message" : "Active Incidents",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-19 10:44:13</sys_created_on>
+        <sys_id>b304470f2f010110b3ff8d1df699b67e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Landing</sys_name>
+        <sys_package display_value="SP_UIB_Huddle" source="2a4af9d32f700110b3ff8d1df699b600">2a4af9d32f700110b3ff8d1df699b600</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SP_UIB_Huddle">2a4af9d32f700110b3ff8d1df699b600</sys_scope>
+        <sys_update_name>sys_ux_macroponent_b304470f2f010110b3ff8d1df699b67e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-19 10:47:58</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>
